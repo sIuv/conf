@@ -1,4 +1,8 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
 ;; Pontus Englund @ Emacs Configuration
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Set package archives
 (require 'package)
@@ -69,7 +73,6 @@
 
 ;;(global-set-key (kbd "\C-o") 'python-completion-complete-at-point)
 (global-set-key [15] (quote python-shell-completion-complete-or-indent))
-
 
 ;; Org-mode settings
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
