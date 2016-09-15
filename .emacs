@@ -14,7 +14,7 @@
 (package-initialize)
 
 ;; Default packages
-(setq package-list '(ahg auto-complete-rst auto-complete popup calmer-forest-theme elpy yasnippet pyvenv highlight-indentation find-file-in-project swiper company find-file-in-project swiper flycheck let-alist pkg-info epl dash flymake-json flymake-easy highlight-indentation jedi auto-complete popup jedi-core python-environment deferred epc ctable concurrent deferred jedi-core python-environment deferred epc ctable concurrent deferred json-mode json-snatcher json-reformat json-reformat json-snatcher let-alist neotree pkg-info epl popup py-isort python-environment deferred pyvenv sphinx-doc dash s swiper yasnippet editorconfig markdown-mode))
+(setq package-list '(ahg auto-complete-rst auto-complete popup calmer-forest-theme elpy yasnippet pyvenv highlight-indentation find-file-in-project swiper company find-file-in-project swiper flycheck let-alist pkg-info epl dash flymake-json flymake-easy highlight-indentation jedi auto-complete popup jedi-core python-environment deferred epc ctable concurrent deferred jedi-core python-environment deferred epc ctable concurrent deferred json-mode json-snatcher json-reformat json-reformat json-snatcher let-alist neotree pkg-info epl popup py-isort python-environment deferred pyvenv sphinx-doc dash s swiper yasnippet editorconfig markdown-mode protobuf-mode))
 
 ;; Fetch the list of packages available
 (unless package-archive-contents
@@ -84,8 +84,10 @@
 	'(("IN-PROGRESS" . "yellow")("WAITING" . "orange")("UPCOMING" . "deep sky blue")))
 (setq org-todo-keywords
 	'((sequence "TODO" "IN-PROGRESS" "WAITING" "UPCOMING" "DONE")))
-(setq org-default-notes-file "~/Documents/todo.org"
-	initial-buffer-choice org-default-notes-file)
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((ditaa . t))) ;; this line activates ditaa
+
+;; Auto open file at startup
+;;(setq org-default-notes-file "~/Documents/todo.org"
+;;	initial-buffer-choice org-default-notes-file)
